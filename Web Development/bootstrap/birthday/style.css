@@ -1,0 +1,27 @@
+.hat{
+    width: 5em;
+    animation-name: goRight;
+    animation-duration: 4s;
+    position: relative;
+    animation-fill-mode: forwards;
+    padding-top: 2em;
+}
+.cake{
+    width: 20em;
+    animation-name: goLeft;
+    animation-duration: 4s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+.birthdayBoy{
+    padding-top: 5em;
+}
+@keyframes goRight{
+    from {left:1em;} 
+    to {left:37em;}
+}
+
+@keyframes goLeft{
+    from {right:1em;} 
+    to {right:35em;}
+}

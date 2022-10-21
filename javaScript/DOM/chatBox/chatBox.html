@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bae02b68a1.js" crossorigin="anonymous"></script>
+    <title>Chat Box</title>
+    <style>
+        #chatBox{
+            width: 80vw;
+            margin:0 auto;
+            position: relative;
+            background-color:antiquewhite ;
+        }
+        button{
+            position: fixed;
+            top: auto;
+        }
+        textarea{
+            border-radius: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id = "chatBox">
+            <div>
+                <textarea id = "comment" rows = "2" ></textarea>
+                <button onclick = "addComment()"><i class="fa-solid fa-circle-arrow-right">arrow</i></button>
+            </div>
+            
+        </div>
+
+        <input id = "input-btn">
+        <button id = "submit" disabled>Delete</button>
+
+    </section>
+
+    <div id = "listSection">
+        <h2>List of Items</h2>
+        <ul id = "list">
+            <li onclick = "clickFirstItem(event)" class="firstItem">zeroth</li>
+            <li class="listItem">first</li>
+            <li class="listItem">second</li>
+            <li class="listItem">third</li>
+            <li class="listItem">fourth</li>
+        </ul>
+        <button id = "addItem">add item</button>
+    </div>
+    <script src = "chatBox.js"></script>
+</body>
+</html>

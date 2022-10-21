@@ -1,0 +1,51 @@
+p { color: green;
+text-align: center }
+table, td, th { border: .2vw solid black;
+	border-collapse:collapse; 
+	padding: 2vw;
+	color: #298f3f}
+#second{ color : gray;
+text-align:right; }
+body{text-align: left}
+blockquote{color: #8e27b0;
+    font-size: medium
+    padding: 15px;
+    border: 1px solid black;
+}
+body{ background: url("https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?cs=srgb&dl=pexels-gdtography-911738.jpg&fm=jpg");\
+	background-size: 1080px, 800px
+	background-repeat:no-repeat; }
+h1{display: inline-block;
+    text-align: center;
+    border: 2px solid;
+    margin: 50px;
+    padding: 25px;}
+ .navbar{background-color: red;
+    color: #F5F5F5;
+    height: 25px;
+    width: 80%;
+    padding: 20px;
+    font-size: large;
+	font-family: 'Lobster', cursive;}
+ .paragraph{
+ 	background-color: lightgray;
+    width: 40%;
+    padding: 20px;
+    border: 3px solid green;
+    margin-left: 600px;
+    outline-style: dashed;
+    outline-width: 6px;
+    text-align: justify;
+    text-indent: 50px;
+ }
+i{  height: 100px;
+    width: 30px;
+    color: black; }
+#link{
+    display: block;
+    font-size: x-large;
+    color: blue;
+    background-color: red;
+    margin: auto;
+    text-align: center; }
+ #link:hover{background-color: black;}

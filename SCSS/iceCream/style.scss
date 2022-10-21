@@ -1,0 +1,51 @@
+$background-color: rgb(206, 169, 169);
+$padding: 15px;
+body{
+    background-color: $background-color;
+    @debug $background-color;
+}
+
+// if hover then image will be changed
+$background-image: url("image/A401-photo-content-1-medium-original-150.jpg");
+// add background image to p tag
+.iceCream{
+        background-image: $background-image;
+        padding: $padding;
+        @debug $padding;
+        &:hover{
+                background-image: url("image/cherry.png")
+        }
+
+}
+@mixin toSeeValues(){
+        @debug $padding;
+        @debug $background-color;
+}
+
+@include toSeeValues();
+
+@function changeImage( $imgSource){
+    
+        @return  $imgSource;
+    
+
+}
+.resize{
+        width: 200px;
+        height: auto;
+        margin-left: 200px;
+
+}
+.iceCream{
+        @extend .resize;
+}
+
+@mixin createColumn($noOfColumns){
+        @for $i from 1 through $noOfColumns{
+                .col-#{$i} {
+                        width: 100%/12 * $i;
+                }
+        }
+        
+}
+@include createColumn(5)

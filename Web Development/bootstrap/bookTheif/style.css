@@ -1,0 +1,31 @@
+.logo{
+    height: 30px;
+    width: 30px;
+}
+
+/* .card{
+    height: 355px;
+} */
+
+.card-img-top{
+    height: 100%;
+}
+
+@media screen and (min-width:576px){
+    .card{width: 49%;}
+}
+
+@media screen and (min-width:746px){
+    .card{width: 24%;}
+
+}
+
+@media screen and (max-width:576px){
+    .card{width: 100%;}
+    
+}
+/* .books{
+    flex-grow: 0;
+} */
+
+

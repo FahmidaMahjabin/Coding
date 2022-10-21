@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customization: Utilities - Utility API</title>
+    <link rel="stylesheet" href="../../css/utilities/utility-api.css">
+    <style>
+      pre code {
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container">
+          <div class="mb-0 h4"><a href="../index.html" class="navbar-brand">Bootstrap 5 Customization</a></div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarDropdown">
+            <ul class="navbar-nav ms-auto me-2">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Global options</a>
+                <div class="dropdown-menu">
+                  <a href="../global-options/01-spacer.html" class="dropdown-item">Spacer</a>
+                  <a href="../global-options/02-border-radius.html" class="dropdown-item">Border radius</a>
+                  <a href="../global-options/03-box-shadow.html" class="dropdown-item">Box shadow</a>
+                  <a href="../global-options/04-gradients.html" class="dropdown-item">Gradients</a>
+                  <a href="../global-options/05-transitions.html" class="dropdown-item">Transitions</a>
+                  <a href="../global-options/06-caret.html" class="dropdown-item">Caret</a>
+                  <a href="../global-options/07-button-pointers.html" class="dropdown-item">Button pointers</a>
+                  <a href="../global-options/08-validation-icons.html" class="dropdown-item">Validation icons</a>
+                  <a href="../global-options/09-negative-margins.html" class="dropdown-item">Negative margins</a>
+                  <a href="../global-options/10-important-utilities.html" class="dropdown-item">Important utilities</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colors</a>
+                <div class="dropdown-menu">
+                  <a href="../colors/01-colors-overview.html" class="dropdown-item">Colors overview</a>
+                  <a href="../colors/02-add-to-theme-colors.html" class="dropdown-item">Add to theme colors</a>
+                  <a href="../colors/03-remove-from-theme-colors.html" class="dropdown-item">Remove from theme colors</a>
+                  <a href="../colors/04-defining-color-palette.html" class="dropdown-item">Defining color palette</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layout</a>
+                <div class="dropdown-menu">
+                  <a href="../layout/breakpoints.html" class="dropdown-item">Breakpoints</a>
+                  <a href="../layout/container.html" class="dropdown-item">Container</a>
+                  <a href="../layout/grid.html" class="dropdown-item">Grid</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Content</a>
+                <div class="dropdown-menu">
+                  <a href="../content/typography.html" class="dropdown-item">Typography</a>
+                  <a href="../content/images.html" class="dropdown-item">Images</a>
+                  <a href="../content/tables.html" class="dropdown-item">Tables</a>
+                  <a href="../content/figures.html" class="dropdown-item">Figures</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
+                <div class="dropdown-menu">
+                  <a href="../forms/range.html" class="dropdown-item">Range</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components</a>
+                <div class="dropdown-menu">
+                  <a href="../components/breadcrumb.html" class="dropdown-item">Breadcrumb</a>
+                  <a href="../components/card.html" class="dropdown-item">Card</a>
+                  <a href="../components/carousel.html" class="dropdown-item">Carousel</a>
+                  <a href="../components/modal.html" class="dropdown-item">Modal</a>
+                  <a href="../components/progress.html" class="dropdown-item">Progress</a>
+                  <a href="../components/spinners.html" class="dropdown-item">Spinners</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Helpers</a>
+                <div class="dropdown-menu">
+                  <a href="../helpers/ratio.html" class="dropdown-item">Ratio</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilities</a>
+                <div class="dropdown-menu">
+                  <a href="../utilities/borders.html" class="dropdown-item">Borders</a>
+                  <a href="../utilities/position.html" class="dropdown-item">Position</a>
+                  <a href="../utilities/spacing.html" class="dropdown-item">Spacing</a>
+                  <a href="../utilities/utility-api.html" class="dropdown-item active">Utility API</a>
+                </div>
+              </li>
+            </ul>
+            <div class="form-check form-switch mb-0" data-bs-toggle="tooltip" data-bs-html="true" title="Toggle custom CSS<br>on and off">
+              <input type="checkbox" class="form-check-input" id="cssSwitch" checked>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container pt-5">
+
+      <h1>Utility API</h1>
+
+      <h2 class="mb-3 mt-5">Syntax</h2>
+      <h3 class="h4 text-muted my-3">SCSS:</h3>
+      <pre><code>$utilities: (
+  // Name for utility
+  "[string]": (
+    // CSS property (required)
+    property: [variable],
+    // CSS values (required)
+    values: [space-separated list or map (if class names and values should be different],
+    // Class name prefix to use instead of property name
+    class: [variable],
+    // Generate variants for different states
+    state: [space-separated list],
+    // Generate responsive classes
+    responsive: [boolean (false)],
+    // Enable fluid rescaling
+    rfs: [boolean (false)],
+    // Generate print classes,
+    print: [boolean (false)],
+    // Keep utility in RTL,
+    rtl: [boolean (true)]
+  )
+);
+</code></pre>
+
+      <h2 class="mb-3 mt-5">Modify</h2>
+      <p>Modify sizing utility for width</p>
+      <h3 class="h4 text-muted my-3">SCSS:</h3>
+      <pre><code>$utilities: (
+  "width": (
+    property: width,
+    class: w,
+    values: (
+      10: 10%,
+      20: 20%,
+      30: 30%,
+      40: 40%,
+      50: 50%,
+      60: 60%,
+      70: 70%,
+      80: 80%,
+      90: 90%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+);
+</code></pre>
+
+      <div class="bg-secondary">
+        <div class="bg-light p-2 w-10">Width 10%</div>
+        <div class="bg-light p-2 w-20">Width 20%</div>
+        <div class="bg-light p-2 w-30">Width 30%</div>
+        <div class="bg-light p-2 w-40">Width 40%</div>
+        <div class="bg-light p-2 w-50">Width 50%</div>
+        <div class="bg-light p-2 w-60">Width 60%</div>
+        <div class="bg-light p-2 w-70">Width 70%</div>
+        <div class="bg-light p-2 w-80">Width 80%</div>
+        <div class="bg-light p-2 w-90">Width 90%</div>
+        <div class="bg-light p-2 w-100">Width 100%</div>
+      </div>
+
+      <h2 class="mb-3 mt-5">Add: simple</h2>
+      <p>Generate cursor utilities</p>
+      <h3 class="h4 text-muted my-3">SCSS:</h3>
+      <pre><code>$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      values: auto context-menu copy grab help pointer wait,
+    )
+  )
+);
+</code></pre>
+
+      <div class="badge bg-secondary cursor-auto">Cursor auto</div>
+      <div class="badge bg-secondary cursor-context-menu">Cursor context-menu</div>
+      <div class="badge bg-secondary cursor-copy">Cursor copy</div>
+      <div class="badge bg-secondary cursor-grab">Cursor grab</div>
+      <div class="badge bg-secondary cursor-help">Cursor help</div>
+      <div class="badge bg-secondary cursor-pointer">Cursor pointer</div>
+      <div class="badge bg-secondary cursor-wait">Cursor wait</div>
+
+      <h2 class="mb-3 mt-5">Add: complex</h2>
+      <p>Generate opacity utilities</p>
+      <h3 class="h4 text-muted my-3">SCSS:</h3>
+      <pre><code>$utilities: map-merge(
+  $utilities,
+  (
+    "opacity": (
+      property: opacity,
+      class: o,
+      responsive: true,
+      print: true,
+      state: hover,
+      values: (
+        0: 0,
+        25: .25,
+        50: .5,
+        75: .75,
+        100: 1,
+      )
+    )
+  )
+);
+</code></pre>
+
+      <h4 class="h5 text-muted my-3">All breakpoints</h4>
+      <div class="badge bg-secondary o-0">Opacity 0 for</div>
+      <div class="badge bg-secondary o-25">Opacity 0.25 for</div>
+      <div class="badge bg-secondary o-50">Opacity 0.5 for</div>
+      <div class="badge bg-secondary o-75">Opacity 0.75 for</div>
+      <div class="badge bg-secondary o-100">Opacity 1 for</div>
+
+      <h4 class="h5 text-muted my-3">Breakpoint sm and up</h4>
+      <div class="badge bg-secondary o-sm-0">Opacity 0 for sm</div>
+      <div class="badge bg-secondary o-sm-25">Opacity 0.25 for sm</div>
+      <div class="badge bg-secondary o-sm-50">Opacity 0.5 for sm</div>
+      <div class="badge bg-secondary o-sm-75">Opacity 0.75 for sm</div>
+      <div class="badge bg-secondary o-sm-100">Opacity 1 for sm</div>
+
+      <h4 class="h5 text-muted my-3">Breakpoint md and up</h4>
+      <div class="badge bg-secondary o-md-0">Opacity 0 for md</div>
+      <div class="badge bg-secondary o-md-25">Opacity 0.25 for md</div>
+      <div class="badge bg-secondary o-md-50">Opacity 0.5 for md</div>
+      <div class="badge bg-secondary o-md-75">Opacity 0.75 for md</div>
+      <div class="badge bg-secondary o-md-100">Opacity 1 for md</div>
+
+      <h4 class="h5 text-muted my-3">Breakpoint lg and up</h4>
+      <div class="badge bg-secondary o-lg-0">Opacity 0 for lg</div>
+      <div class="badge bg-secondary o-lg-25">Opacity 0.25 for lg</div>
+      <div class="badge bg-secondary o-lg-50">Opacity 0.5 for lg</div>
+      <div class="badge bg-secondary o-lg-75">Opacity 0.75 for lg</div>
+      <div class="badge bg-secondary o-lg-100">Opacity 1 for lg</div>
+
+      <h4 class="h5 text-muted my-3">Breakpoint xl and up</h4>
+      <div class="badge bg-secondary o-xl-0">Opacity 0 for xl</div>
+      <div class="badge bg-secondary o-xl-25">Opacity 0.25 for xl</div>
+      <div class="badge bg-secondary o-xl-50">Opacity 0.5 for xl</div>
+      <div class="badge bg-secondary o-xl-75">Opacity 0.75 for xl</div>
+      <div class="badge bg-secondary o-xl-100">Opacity 1 for xl</div>
+
+      <h4 class="h5 text-muted my-3">Breakpoint xxl and up</h4>
+      <div class="badge bg-secondary o-xxl-0">Opacity 0 for xxl</div>
+      <div class="badge bg-secondary o-xxl-25">Opacity 0.25 for xxl</div>
+      <div class="badge bg-secondary o-xxl-50">Opacity 0.5 for xxl</div>
+      <div class="badge bg-secondary o-xxl-75">Opacity 0.75 for xxl</div>
+      <div class="badge bg-secondary o-xxl-100">Opacity 1 for xxl</div>
+
+      <h4 class="h5 text-muted my-3">For print only</h4>
+      <div class="badge bg-secondary o-print-0">Opacity 0 for print</div>
+      <div class="badge bg-secondary o-print-25">Opacity 0.25 for print</div>
+      <div class="badge bg-secondary o-print-50">Opacity 0.5 for print</div>
+      <div class="badge bg-secondary o-print-75">Opacity 0.75 for print</div>
+      <div class="badge bg-secondary o-print-100">Opacity 1 for print</div>
+
+      <h4 class="h5 text-muted my-3">On hover</h4>
+      <div class="badge bg-secondary o-0-hover">Opacity 0 on hover</div>
+      <div class="badge bg-secondary o-25-hover">Opacity 0.25 on hover</div>
+      <div class="badge bg-secondary o-50-hover">Opacity 0.5 on hover</div>
+      <div class="badge bg-secondary o-75-hover">Opacity 0.75 on hover</div>
+      <div class="badge bg-secondary o-100-hover">Opacity 1 on hover</div>
+
+      <h2 class="mb-3 mt-5">Rename</h2>
+      <p>Rename class prefix for "margin start" from <code>.ms-*</code> to <code>.ml-*</code>.</p>
+      <h3 class="h4 text-muted my-3">SCSS:</h3>
+      <pre><code>$utilities: map-merge(
+  $utilities, (
+    "margin-start": map-merge(
+      map-get($utilities, "margin-start"),
+      ( class: ml ),
+    ),
+  )
+);
+</code></pre>
+
+      <div class="ml-0">Margin left 0</div>
+      <div class="ml-1">Margin left 1</div>
+      <div class="ml-2">Margin left 2</div>
+      <div class="ml-3">Margin left 3</div>
+      <div class="ml-4">Margin left 4</div>
+      <div class="ml-5">Margin left 5</div>
+
+      <h2 class="mb-3 mt-5">Remove</h2>
+      <p>Remove interaction utilities</p>
+      <h3 class="h4 text-muted my-3">SCSS:</h3>
+      <pre><code>$utilities: map-merge(
+  $utilities,
+  (
+    "user-select": null,
+    "pointer-events": null
+  )
+);
+</code></pre>
+
+      <h4 class="h5 text-muted mt-3">Pointer events none</h4>
+      <p><a href="#" class="pe-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+
+      <h4 class="h5 text-muted mt-3">User select all</h4>
+      <p class="user-select-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum. Suspendisse maximus convallis ex. Etiam eleifend velit leo.</p>
+    
+    </div>
+    
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script>
+      new bootstrap.Tooltip(document.querySelector('[data-bs-toggle="tooltip"]'));
+
+      var cssSwitch = document.getElementById('cssSwitch');
+      var stylesheetElement = document.getElementsByTagName('link')[0];
+      var currentStylesheetHref = stylesheetElement.getAttribute('href');
+      var defaultStylesheetHref = '../../css/default.css';
+
+      cssSwitch.addEventListener('change', function() {
+        if (cssSwitch.checked) {
+          stylesheetElement.setAttribute('href', currentStylesheetHref)
+        } else {
+          stylesheetElement.setAttribute('href', defaultStylesheetHref);
+        }
+      });
+    </script>
+  </body>
+</html>

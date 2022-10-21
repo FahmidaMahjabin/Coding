@@ -1,0 +1,32 @@
+$backgroundForArticle : rgb(83, 83, 194);
+
+@mixin article($width, $border:black) {
+    background-color: $backgroundForArticle;
+    border: $width solid $border;
+    
+}
+.new{
+    @include 
+        article(5px, $border: rgb(143, 63, 63));
+    
+}
+$numbers : 1, 2, 3, 4;
+
+@each $number in $numbers{
+    .image-#{$number} {
+        width: $number* 100px;
+    }
+
+}
+// function = image-5 er width hobe image-1 theke image-4 er width er summation
+
+@function sum($numbers){
+    $sum : 0;
+    @each $number in $numbers{
+    $sum : $sum + $number}
+    @debug $sum;
+    @return #{$sum * 100 }px;
+}
+.image-5{
+    width: sum($numbers);
+}

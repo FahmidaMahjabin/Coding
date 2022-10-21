@@ -1,0 +1,21 @@
+.img-fluid{
+    height: 20%;
+}
+.icon{
+    color: rgb(68, 93, 207);
+    height: 50px;
+    width: 50px;
+}
+.iconRight{
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+.small-icon{
+    height: 16px;
+    width: 16px;
+    color: gray;
+}
+.textColor{
+    color: rgb(68, 93, 207);
+}

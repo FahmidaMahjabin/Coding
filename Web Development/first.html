@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span{
+                display:inline-block;
+                margin: 12px;
+                padding: 2px;
+                background-color: brown;
+            }
+            b{display: run-in;}
+            li{display: flow-root;}
+            #1st{
+                background-color: blue;
+                display: block;
+            }
+            #2nd{
+                background-color: brown;
+                display:inline-block;
+            }
+        </style>
+
+    </head>
+    <body>
+        <p id = "first">Hello world</p>
+        <div id  = "section">
+            <h1 id = "h1">the game starts</h1>
+            <h3 id = "h3"></h3>
+            
+
+        </div>
+         
+        <button onclick = 'changeHeader()'>click here</button>
+        <button onclick = "addHeader()">see</button>
+        <button onclick = "console.log('hey there')">watch</button>
+        <!--hey there -->
+        <!--abc + b  -->
+        <p id = "12"></p>
+        <button onclick = "123">look</button>
+        <button onclick = 'document.getElementById("h3").innerHTML = document.getElementById("h1").innerHTML'>click</button>
+        <script>
+            
+            var container = 5 + "volvo";
+            console.log(container);
+            console.log(typeof container);
+
+            function changeHeader(){
+                document.getElementById("section").innerHTML = "<h3>the game starts</h3>";
+
+            };
+            function addHeader(){
+                document.getElementById("h3").innerHTML = document.getElementById('h1').innerHTML;
+            }
+        
+            document.getElementById("12").innerHTML = tocelcious(300);
+            function tocelcious(farenheit){
+                celcious = 5/9 *(farenheit- 32);
+                return celcious;
+            }
+
+           
+        </script>
+
+        <p id = "1st">sky blue
+            <p id = "2nd">Lorem ipsum dolor sit<span>ayon</span><span> ayon </span> amet consectetur adipisicing elit. Unde fuga laudantium qui cumque. Odit cum quae consequuntur neque sequi. Aperiam, at! Odio minima esse qui, laborum quis placeat commodi maiores.
+                <p style= "background-color:green"><b>ayon kutta First</b>, this property doesn’t work in Firefox. Word is that the spec for it isn’t well defined enough. To begin to understand it though, it’s like if you want a header element to sit inline with the text below it </p>
+            </p>
+        </p>
+       
+            <div style = "display: inline-block;">chrome</div>
+            <div style = "display: inline-block;">chrome</div>
+            <div style = "display: inline-block;">chrome</div>
+            <div style = "display: inline-block;">chrome</div>
+            <div style = "display: inline-block;">chrome</div>
+       
+            
+        
+
+    </body>
+
+</html>

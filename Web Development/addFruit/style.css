@@ -1,0 +1,17 @@
+#wholePage{
+    font-size: 16px;
+    height: 30em;
+    display: block;
+}
+#leftPart{
+    display: inline-block;
+    width: 50%;
+    border-right: 1em solid green;
+}
+
+#rightPart{
+    display: inline-block;
+    width: 50%;
+
+    
+}

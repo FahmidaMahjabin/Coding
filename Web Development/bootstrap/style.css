@@ -1,0 +1,17 @@
+.navbar{
+  background-color: gray;
+  color: rgb(2, 8, 14);
+}
+body{
+  background-color: rgb(159, 208, 228);
+}
+.sideBar{
+  background-color: snow;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  min-height: 600px;
+}
+.list-group-item-action:hover{
+  background-color: black;
+  color: antiquewhite;
+}

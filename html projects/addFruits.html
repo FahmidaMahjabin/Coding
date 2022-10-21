@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+	<title>add Fruits</title>
+	<style type="text/css">
+		body{display: table;}
+
+		form{display: table-cell;
+			width: 33%;
+			padding: 50px;}
+
+		button{text-align: center;
+    margin-left: 50px;
+    background-color: #0000ffa6;
+    color: white;
+    margin-top: 5px;
+    font-family: cursive;}
+    	label{
+	display: table-cell;
+	padding: 50px;
+	width: 33%}
+    .bar{
+    border-right: 6px solid green;
+    height: 200px;
+    width:33%;
+    display: table-cell;
+}
+		.fas{
+			font-size: 15px;
+			color: rgb(12, 12, 12);
+		}
+	</style>
+	<script src="https://kit.fontawesome.com/bae02b68a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- <script src = "addfruit.js"></script> -->
+	<script src = "addFruitUsingOn.js"></script>
+	<!-- <script src = "javascript.js"></script> -->
+	
+	<input type="text" name="fruit" placeholder="add item">
+	<br>
+	<button type="button">Add</button>
+	
+	
+	<div class="bar"></div>
+	
+	<div>
+		<label>Show item list:</label>
+		<ul id = "fruitList">
+			
+		</ul>
+		<p></p>
+	</div>
+	
+	
+
+</body>
+</html>

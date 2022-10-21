@@ -1,0 +1,47 @@
+
+
+.parent{
+    display: flex;
+    height: 200px;
+}
+.left{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+.upper{
+    display: flex;
+    flex-grow: 1;
+
+}
+.a{
+    background-color: pink;
+    flex-grow: 1;
+}
+.b{
+    flex-grow: 1;
+    background-color: greenyellow;
+}
+.lower{
+    background-color: indigo;
+    flex-grow: 1;
+}
+.right{
+    flex-grow: 1;
+    background-color: skyblue;
+    
+}
+
+@media screen and (max-width:700px){
+    .parent{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+}
